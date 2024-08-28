@@ -54,3 +54,5 @@ General rules
 • Code is expressive
 • Code is small
 • Code adheres to SOLID principles
+
+The solution is in StringManipulatorSolution, and the tests are in StringManipulator.Tests
