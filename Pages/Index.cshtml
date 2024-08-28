@@ -1,0 +1,21 @@
+﻿@page
+@model LargestWordModel
+@{
+    ViewData["Title"] = "Largest Word";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="InputString">Enter a string:</label>
+        <input asp-for="InputString" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Find Largest Word</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.LargestWord))
+{
+    <h2>Result:</h2>
+    <p>The largest word is: @Model.LargestWord</p>
+}
